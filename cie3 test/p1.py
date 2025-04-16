@@ -37,6 +37,26 @@ class queue:
             self.rear = None
         self.size -= 1
         return data
+
+if __name__ == "__main__":
+    q = Queue()
+
+    print("Is empty?", q.is_empty())  
+
+    q.enqueue(10)
+    q.enqueue(20)
+    q.enqueue(30)
+
+    print("Front:", q.front())         
+    print("Is empty?", q.is_empty())   
+
+    print("Dequeue:", q.dequeue())    
+    print("Front after dequeue:", q.front())  
+
+    print("Dequeue:", q.dequeue())     
+    print("Dequeue:", q.dequeue())    
+    print("Dequeue (empty):", q.dequeue()) 
+    print("Is empty?", q.is_empty())   
     
        
 
